@@ -89,13 +89,14 @@ radius = 4.0
 height = 14.0
 
 [node name="Player" type="CharacterBody2D" unique_id=1422784962]
-scale = Vector2(3, 3)
+scale = Vector2(5, 5)
 script = ExtResource("1_cvnsp")
 
 [node name="PlayerSprite" type="AnimatedSprite2D" parent="." unique_id=2094902568]
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_gymyn")
-animation = &"Jump"
+animation = &"Idle"
+autoplay = "Idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1855348891]
 position = Vector2(1, 0)
