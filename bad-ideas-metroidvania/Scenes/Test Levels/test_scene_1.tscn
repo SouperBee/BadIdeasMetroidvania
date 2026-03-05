@@ -3,9 +3,13 @@
 [ext_resource type="Texture2D" uid="uid://dhnhdm431j7sd" path="res://Assets/KennysPrototypeTextures/addons/kenney_prototype_textures/dark/texture_09.png" id="1_hl0cj"]
 [ext_resource type="Texture2D" uid="uid://c04g7u8wlqigy" path="res://Assets/KennysPrototypeTextures/addons/kenney_prototype_textures/orange/texture_01.png" id="2_1gjkf"]
 [ext_resource type="PackedScene" uid="uid://7qt5yxnku4se" path="res://Scenes/player.tscn" id="2_ulri0"]
+[ext_resource type="PackedScene" uid="uid://bnvodk737drlf" path="res://Scenes/door_area_2d.tscn" id="4_1gjkf"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1gjkf"]
 size = Vector2(20.4, 20.4)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p14qh"]
+size = Vector2(45, 185)
 
 [node name="TestScene1" type="Node2D" unique_id=1213358776]
 
@@ -41,9 +45,9 @@ scale = Vector2(10, 10)
 shape = SubResource("RectangleShape2D_1gjkf")
 
 [node name="WallRight" type="StaticBody2D" parent="Environment/Room Boundaries" unique_id=2131249028]
-position = Vector2(1133, 271)
+position = Vector2(1132.9999, 192)
 rotation = -3.1415927
-scale = Vector2(0.1768776, -3.3886616)
+scale = Vector2(0.1768776, -2.3486629)
 
 [node name="Sprite2D" type="Sprite2D" parent="Environment/Room Boundaries/WallRight" unique_id=24979935]
 scale = Vector2(0.2, 0.2)
@@ -109,4 +113,12 @@ scale = Vector2(10, 10)
 shape = SubResource("RectangleShape2D_1gjkf")
 
 [node name="Player" parent="." unique_id=1422784962 instance=ExtResource("2_ulri0")]
-position = Vector2(564, 574.00006)
+position = Vector2(344.99997, 575.99994)
+
+[node name="DoorArea2D" parent="." unique_id=1676952898 instance=ExtResource("4_1gjkf")]
+connectedRoom = "res://Scenes/Test Levels/test_scene_2.tscn"
+playerPos = Vector2(86, 577)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DoorArea2D" unique_id=2046639646]
+position = Vector2(1132.5, 523.5)
+shape = SubResource("RectangleShape2D_p14qh")

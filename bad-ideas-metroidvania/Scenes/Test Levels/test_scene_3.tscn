@@ -1,0 +1,165 @@
+[gd_scene format=3 uid="uid://dopta03vd70ab"]
+
+[ext_resource type="Texture2D" uid="uid://dhnhdm431j7sd" path="res://Assets/KennysPrototypeTextures/addons/kenney_prototype_textures/dark/texture_09.png" id="1_8twr1"]
+[ext_resource type="PackedScene" uid="uid://bnvodk737drlf" path="res://Scenes/door_area_2d.tscn" id="2_8twr1"]
+[ext_resource type="PackedScene" uid="uid://7qt5yxnku4se" path="res://Scenes/player.tscn" id="3_yqk7n"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1gjkf"]
+size = Vector2(20.4, 20.4)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_spxer"]
+size = Vector2(196, 20)
+
+[node name="TestScene1" type="Node2D" unique_id=1213358776]
+
+[node name="Environment" type="Node" parent="." unique_id=991370264]
+
+[node name="Room Boundaries" type="Node" parent="Environment" unique_id=701616002]
+
+[node name="Floor" type="StaticBody2D" parent="Environment/Room Boundaries" unique_id=850179816]
+position = Vector2(535, 633)
+scale = Vector2(6.12, 0.14400001)
+
+[node name="Sprite2D" type="Sprite2D" parent="Environment/Room Boundaries/Floor" unique_id=195307651]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("1_8twr1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Environment/Room Boundaries/Floor" unique_id=82841268]
+position = Vector2(4.7683716e-06, -4.7683716e-06)
+scale = Vector2(10, 10)
+shape = SubResource("RectangleShape2D_1gjkf")
+
+[node name="Floor3" type="StaticBody2D" parent="Environment/Room Boundaries" unique_id=1656369492]
+position = Vector2(664, 472)
+scale = Vector2(1.44, 0.14400001)
+
+[node name="Sprite2D" type="Sprite2D" parent="Environment/Room Boundaries/Floor3" unique_id=248632420]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("1_8twr1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Environment/Room Boundaries/Floor3" unique_id=1894916964]
+position = Vector2(4.7683716e-06, -4.7683716e-06)
+scale = Vector2(10, 10)
+shape = SubResource("RectangleShape2D_1gjkf")
+
+[node name="Floor4" type="StaticBody2D" parent="Environment/Room Boundaries" unique_id=2039959886]
+position = Vector2(983, 391.99997)
+scale = Vector2(1.44, 0.14400001)
+
+[node name="Sprite2D" type="Sprite2D" parent="Environment/Room Boundaries/Floor4" unique_id=1153342329]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("1_8twr1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Environment/Room Boundaries/Floor4" unique_id=200284890]
+position = Vector2(4.7683716e-06, -4.7683716e-06)
+scale = Vector2(10, 10)
+shape = SubResource("RectangleShape2D_1gjkf")
+
+[node name="Floor5" type="StaticBody2D" parent="Environment/Room Boundaries" unique_id=1449189516]
+position = Vector2(696.9999, 288)
+scale = Vector2(1.44, 0.14400001)
+
+[node name="Sprite2D" type="Sprite2D" parent="Environment/Room Boundaries/Floor5" unique_id=230143721]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("1_8twr1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Environment/Room Boundaries/Floor5" unique_id=191496248]
+position = Vector2(4.7683716e-06, -4.7683716e-06)
+scale = Vector2(10, 10)
+shape = SubResource("RectangleShape2D_1gjkf")
+
+[node name="Floor6" type="StaticBody2D" parent="Environment/Room Boundaries" unique_id=1080582775]
+position = Vector2(372.99997, 209)
+scale = Vector2(1.44, 0.14400001)
+
+[node name="Sprite2D" type="Sprite2D" parent="Environment/Room Boundaries/Floor6" unique_id=1341086354]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("1_8twr1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Environment/Room Boundaries/Floor6" unique_id=94470384]
+position = Vector2(4.7683716e-06, -4.7683716e-06)
+scale = Vector2(10, 10)
+shape = SubResource("RectangleShape2D_1gjkf")
+
+[node name="Floor7" type="StaticBody2D" parent="Environment/Room Boundaries" unique_id=1358332339]
+position = Vector2(691, 114.99998)
+scale = Vector2(1.44, 0.14400001)
+
+[node name="Sprite2D" type="Sprite2D" parent="Environment/Room Boundaries/Floor7" unique_id=661281354]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("1_8twr1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Environment/Room Boundaries/Floor7" unique_id=1364001530]
+position = Vector2(4.7683716e-06, -4.7683716e-06)
+scale = Vector2(10, 10)
+shape = SubResource("RectangleShape2D_1gjkf")
+
+[node name="Roof1" type="StaticBody2D" parent="Environment/Room Boundaries" unique_id=1610148053]
+position = Vector2(320, -14)
+scale = Vector2(3.44, 0.14400001)
+
+[node name="Sprite2D" type="Sprite2D" parent="Environment/Room Boundaries/Roof1" unique_id=994848810]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("1_8twr1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Environment/Room Boundaries/Roof1" unique_id=714100819]
+position = Vector2(4.7683716e-06, -4.7683716e-06)
+scale = Vector2(10, 10)
+shape = SubResource("RectangleShape2D_1gjkf")
+
+[node name="Roof2" type="StaticBody2D" parent="Environment/Room Boundaries" unique_id=102426082]
+position = Vector2(1003, -14.000061)
+scale = Vector2(1.44, 0.14400001)
+
+[node name="Sprite2D" type="Sprite2D" parent="Environment/Room Boundaries/Roof2" unique_id=1226283962]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("1_8twr1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Environment/Room Boundaries/Roof2" unique_id=1195742970]
+position = Vector2(4.7683716e-06, -4.7683716e-06)
+scale = Vector2(10, 10)
+shape = SubResource("RectangleShape2D_1gjkf")
+
+[node name="WallRight" type="StaticBody2D" parent="Environment/Room Boundaries" unique_id=2131249028]
+position = Vector2(1132.9999, 192)
+rotation = -3.1415927
+scale = Vector2(0.1768776, -4.1486626)
+
+[node name="Sprite2D" type="Sprite2D" parent="Environment/Room Boundaries/WallRight" unique_id=24979935]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("1_8twr1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Environment/Room Boundaries/WallRight" unique_id=1303337543]
+position = Vector2(4.7683716e-06, -4.7683716e-06)
+scale = Vector2(10, 10)
+shape = SubResource("RectangleShape2D_1gjkf")
+
+[node name="WallLeft" type="StaticBody2D" parent="Environment/Room Boundaries" unique_id=560646035]
+position = Vector2(19, 192)
+rotation = -3.1415927
+scale = Vector2(0.5306308, -7.306951)
+
+[node name="Sprite2D" type="Sprite2D" parent="Environment/Room Boundaries/WallLeft" unique_id=39208087]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("1_8twr1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Environment/Room Boundaries/WallLeft" unique_id=1556171755]
+position = Vector2(4.7683716e-06, -4.7683716e-06)
+scale = Vector2(10, 10)
+shape = SubResource("RectangleShape2D_1gjkf")
+
+[node name="Obstacles" type="Node" parent="Environment" unique_id=794163131]
+
+[node name="Doors" type="Node" parent="Environment" unique_id=1470139673]
+
+[node name="DoorArea2D" parent="Environment/Doors" unique_id=1676952898 instance=ExtResource("2_8twr1")]
+connectedRoom = "res://Scenes/Test Levels/test_scene_2.tscn"
+playerPos = Vector2(757.99994, 588)
+playerJumpOnEnter = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Environment/Doors/DoorArea2D" unique_id=478745366]
+position = Vector2(765, -27)
+shape = SubResource("RectangleShape2D_spxer")
+
+[node name="Player" parent="." unique_id=1422784962 instance=ExtResource("3_yqk7n")]
+position = Vector2(753.00006, 40.00006)

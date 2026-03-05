@@ -7,6 +7,14 @@ extends CharacterBody2D
 const SPEED = 300.0
 const JUMP_VELOCITY = -520.0
 
+func _ready() -> void:
+	add_to_group("player")
+	if RoomChangeGlobal.activate:
+		global_position = RoomChangeGlobal.playerPos
+		if RoomChangeGlobal.playerJumpOnEnter:
+			velocity.y = JUMP_VELOCITY
+		RoomChangeGlobal.activate = false
+
 func _physics_process(delta: float) -> void:
 	if not is_on_floor():
 		velocity += get_gravity() * delta
